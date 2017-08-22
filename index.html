@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movies</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="movieForm">
+            <div class="form-group">
+              <label for="chooseMovie">Choose movie:</label>
+              <select id="chooseMovie" class="form-group">
+                <option value="FindNemo">Find Nemo</option>
+                <option value="AntiChrist">AntiChrist</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="chooseTime">Choose a time!!:</label>
+              <select id="chooseTime" class="form-group">
+                <option value="Matinee">3pm Matinee</option>
+                <option value="Afternoon">7pm Afternoon</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="choosePrice">Buy a ticket!!:</label>
+              <select id="choosePrice" class="form-group">
+                <option value="Kids">Kids/Senior</option>
+                <option value="Adult">Adult</option>
+              </select>
+            </div>
+            <button class="btn btn-info" type="submit">Get your tickets!!!</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="resultAll">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
