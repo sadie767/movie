@@ -1,8 +1,8 @@
 //business logic
-var Ticket function() {
-  this.chooseMovie = chooseMovie;
-  this.chooseTime = chooseTime;
-  this.choosePrice = choosePrice;
+function Ticket(movie, time, price) {
+  this.movie = movie;
+  this.time = time;
+  this.price = price;
 }
 
 
@@ -16,9 +16,11 @@ $(document).ready(function() {
     var pickPrice = $("#choosePrice").val();
     var newTicket = new Ticket(pickMovie, pickTime, pickPrice);
 
-if (pickMovie === "FindNemo" || pickMovie === "AntiChrist") {
-  $("#chooseTime");
-}
-   });
+    $("#showResults").show();
+    $("#showMovie").text(newTicket.movie);
+    $("#showTime").text(newTicket.time);
+    $("#showPrice").text(newTicket.price);
+
+  });
 
 });
