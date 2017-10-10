@@ -1,12 +1,11 @@
-//business logic
 function Ticket(movie, time, age, ticketPrice) {
   this.movie = movie;
   this.time = time;
   this.age = age;
-  this.ticketPrice = 0;
+  this.ticketPrice = ticketPrice;
 }
 
-Ticket.prototype.Age = function() {
+Ticket.prototype.FinalPrice = function() {
   if(this.age >=55 || this.age <= 12) {
     return 5;
   } else {
